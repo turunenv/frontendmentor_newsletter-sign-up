@@ -1,3 +1,109 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+ul {
+  padding: 0;
+}
+
+button,
+input {
+  font-size: 1rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+button {
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.newsletter-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(235, 18%, 26%);
+}
+
+.newsletter-sign-up, 
+.success-message {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.newsletter-sign-up {
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.newsletter-content {
+  padding: 20px 40px;
+  max-width: 450px;
+}
+
+.newsletter-content ul {
+  list-style-type: none;
+}
+
+.newsletter-content li::before {
+  content: url("./assets/images/icon-list.svg");
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+
+.newsletter-content label {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+
+.newsletter-content form{
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-content form input {
+  padding-left: 1rem;
+}
+
+.newsletter-content li {
+  line-height: 2;
+}
+
+.success-message {
+  display: none;
 }

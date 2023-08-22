@@ -37,13 +37,16 @@ input {
 
 button {
   font-weight: bold;
+  width: 100%;
   margin-top: 20px;
   background-color: hsl(234, 29%, 20%);
+  border: none;
   color: hsl(0, 0%, 100%);
 }
 
 button:hover {
-  background-color: hsl(4, 100%, 67%);
+  background-image: linear-gradient(to right, hsl(347, 95%, 66%), hsl(13, 96%, 62%));
+  cursor: pointer;
 }
 
 .newsletter-wrapper {
@@ -68,42 +71,63 @@ button:hover {
   border-radius: 20px;
 }
 
-.newsletter-content {
-  padding: 20px 40px;
+.content {
+  padding: 40px;
   max-width: 450px;
+  border-radius: 20px;
 }
 
-.newsletter-content ul {
+.content ul {
   list-style-type: none;
 }
 
-.newsletter-content li::before {
+.content li::before {
   content: url("./assets/images/icon-list.svg");
   position: relative;
   top: 4px;
   margin-right: 10px;
 }
 
-.newsletter-content label {
+.form-guidance {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 12px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: hsl(0, 98%, 68%);
+}
+
+div.error {
+  visibility: hidden;
 }
 
 
-.newsletter-content form{
+.content form {
   display: flex;
   flex-direction: column;
 }
 
-.newsletter-content form input {
+.content form input {
   padding-left: 1rem;
+  border: 1px solid hsl(231, 7%, 60%);
 }
 
-.newsletter-content li {
+.content form input:hover {
+  cursor: pointer;
+}  
+
+.content input.error {
+  background-color: hsl(5, 92%, 95%);
+  border: 1px solid hsl(0, 98%, 68%);
+}
+
+.content li {
   line-height: 2;
 }
 
-.success-message {
+.hidden {
   display: none;
 }

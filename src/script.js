@@ -1,11 +1,14 @@
 const email = document.querySelector("#email");
 const form = document.querySelector("form");
 const errorMsg = document.querySelector("div.error");
+const dismissButton = document.querySelector(".success-message button");
+
 const signUpPage = document.querySelector(".newsletter-sign-up");
 const successPage = document.querySelector(".success-message");
+
 const displayEmail = document.querySelector(".display-email");
 
-const emailRegex = /\w+@\w+\.\w+/;
+const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -22,6 +25,10 @@ email.addEventListener("input", (e) => {
   if (!checkEmailValidity(e.target.value)) return;
 
   removeEmailError();
+});
+
+dismissButton.addEventListener("click", (e) => {
+  displaySignUpPage();
 });
 
 function checkEmailValidity(email) {
@@ -46,4 +53,10 @@ function displaySuccessPage(email) {
   displayEmail.textContent = email;
   signUpPage.classList.add("hidden");
   successPage.classList.remove("hidden");
+}
+
+function displaySignUpPage() {
+  email.value = "";
+  signUpPage.classList.remove("hidden");
+  successPage.classList.add("hidden");
 }

@@ -44,11 +44,6 @@ button {
   color: hsl(0, 0%, 100%);
 }
 
-button:hover {
-  background-image: linear-gradient(to right, hsl(347, 95%, 66%), hsl(13, 96%, 62%));
-  cursor: pointer;
-}
-
 .newsletter-wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -112,10 +107,6 @@ div.error {
   border: 1px solid hsl(231, 7%, 60%);
 }
 
-.content form input:hover {
-  cursor: pointer;
-}  
-
 .content input.error {
   background-color: hsl(5, 92%, 95%);
   border: 1px solid hsl(0, 98%, 68%);
@@ -151,5 +142,12 @@ div.error {
 
   .content + img {
     content: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-image: linear-gradient(to right, hsl(347, 95%, 66%), hsl(13, 96%, 62%));
+    cursor: pointer;
   }
 }

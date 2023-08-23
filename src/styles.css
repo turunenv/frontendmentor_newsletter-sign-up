@@ -81,11 +81,8 @@ button:hover {
   list-style-type: none;
 }
 
-.content li::before {
-  content: url("./assets/images/icon-list.svg");
-  position: relative;
-  top: 4px;
-  margin-right: 10px;
+.content p {
+  line-height: 1.5;
 }
 
 .form-guidance {
@@ -125,8 +122,18 @@ div.error {
 }
 
 .content li {
-  line-height: 2;
+  line-height: 1.5;
+  display: flex;
+  margin-bottom: 5px;
 }
+
+.content li img {
+  align-items: flex-start;
+  height: 21px;
+  margin-right: 5px;
+}
+
+
 
 .hidden {
   display: none;

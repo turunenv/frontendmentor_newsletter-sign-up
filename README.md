@@ -1,15 +1,12 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
-
 
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [Links](#links)
-
-
 
 ## The challenge
 
@@ -30,4 +27,4 @@ Users should be able to:
 ## Links
 
 - [Solution](https://github.com/turunenv/frontendmentor_newsletter-sign-up/tree/main/src)
-- [Live site](https://your-live-site-url.com)
+- [Live site](https://turunenv.github.io/frontendmentor_newsletter-sign-up/)

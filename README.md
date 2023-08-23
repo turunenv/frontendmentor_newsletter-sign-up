@@ -29,5 +29,5 @@ Users should be able to:
 
 ## Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://github.com/turunenv/frontendmentor_newsletter-sign-up/tree/main/src)
 - [Live site](https://your-live-site-url.com)
